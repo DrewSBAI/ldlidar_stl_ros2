@@ -163,7 +163,7 @@ void  ToLaserscanMessagePublish(ldlidar::Points2D& src,  double lidar_spin_freq,
   // Adjust the parameters according to the demand
   angle_min = 0;
   angle_max = (2 * M_PI);
-  range_min = 0.02;
+  range_min = 0.35; //0.02;
   range_max = 25;
   int beam_size = static_cast<int>(src.size());
   angle_increment = (angle_max - angle_min) / (float)(beam_size -1);
